@@ -3,7 +3,7 @@ icon: 🚀
 title: Criando um blog estático com Next.js e Markdown
 summary: Um jeito de manter um blog pessoal sem se preocupar com banco de dados, hospedagem e performance.
 date:
-  iso: '2020-08-29T22:35:46.357Z'
+  iso: '2020-08-30T20:18:54.073Z'
   formated: 29/08/2020
 seo:
   ogImage: /assets/blog/dynamic-routing/cover.jpg
@@ -35,7 +35,7 @@ O [Next.js](https://nextjs.org/) é um Framework de Javascript que facilita em m
 
 #### Sistema de rotas separados por pastas
 
-- Dentro da raiz do projeto podemos criar uma pasta chama `src` e outra chamada `public`.
+- Dentro da raiz do projeto podemos criar uma pasta chamada `src` e outra chamada `public`.
 
 ``` markdown
  📦projeto
