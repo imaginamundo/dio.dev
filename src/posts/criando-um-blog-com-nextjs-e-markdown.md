@@ -4,7 +4,7 @@ title: Criando um blog estático com Next.js e Markdown
 summary: Um jeito de manter um blog pessoal sem se preocupar com banco de dados, hospedagem e performance.
 date:
   iso: '2020-08-30T20:18:54.073Z'
-  formated: 29/08/2020
+  formated: 30/08/2020
 seo:
   ogImage: /assets/blog/dynamic-routing/cover.jpg
 ---
@@ -109,7 +109,7 @@ Após você dar enter, ele vai perguntar algumas coisas, você pode preencher ou
 npm i next react react-dom gray-matter remark remark-html
 ```
 
-Isso instalará todas as dependencias básicas que teremos no projeto,
+Isso instalará todas as dependencias básicas que teremos no projeto.
 
 ### Adiciona comandos ao package.json
 
