@@ -33,6 +33,16 @@ function Header() {
         >
           Instagram
         </a>
+        { ' ' }
+        <a
+          href="https://twitter.com/dioruto"
+          title="Abrir Twitter numa nova aba"
+          target="_blank"
+          rel="noopener"
+          className={ styles.menuItem }
+        >
+          Twitter
+        </a>
       </nav>
     </header>
   );

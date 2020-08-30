@@ -784,4 +784,3 @@ Esse blog onde você está lendo esse artigo foi feito da mesma forma, mas com a
 Pronto, agora você tem um blog com Markdown, ainda não 100% otimizado, mas bem rápido.
 
 [Baixar o resultado inteiro desse artigo](/blog.rar).
-
