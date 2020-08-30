@@ -1,0 +1,39 @@
+html,
+body {
+  color: #070c0d;
+  line-height: 1.62em;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+html.dark {
+  background: #070c0d;
+  color: #ded6c7;
+}
+a {
+  color: #2a909e;
+  text-decoration: underline dotted;
+}
+a:hover {
+  color: #61b3bf
+}
+a:visited {
+  color: #9344B1;
+}
+a:visited:hover {
+  color: #BB6BD9;
+}
+
+dd {
+  margin: 0 0 1em;
+  opacity: .8;
+}
+
+.icon {
+  width: 20px;
+  text-decoration: wavy;
+}
+
+.textCenter {
+  text-align: center;
+}

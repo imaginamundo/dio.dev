@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+}
+.menu {
+  margin-left: auto;
+}
+.menuItem {
+  display: inline-flex;
+}
+.menuItem + .menuItem {
+  margin-left: .5em;
+}
