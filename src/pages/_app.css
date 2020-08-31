@@ -1,14 +1,15 @@
-html,
-body {
+html {
   color: #070c0d;
   line-height: 1.62em;
-
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
 html.dark {
   background: #070c0d;
   color: #ded6c7;
+}
+body {
+  margin: 1em;
 }
 a {
   color: #2a909e;
