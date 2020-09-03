@@ -570,4 +570,4 @@ Essas são as mudanças mais rápidas para se fazer, existem outras coisas que m
 
 Em conclusão, utilize a maioria possível de métodos se você quer bons resultados de visitas organicas no seu site.
 
-[^1]: Sugestão de melhoria enviada por [Camila Vercino](https://www.linkedin.com/in/camilavecino/ "LinkedIn da Camila Vecino").
+[^1]: Sugestão de melhoria enviada por [Camila Vecino](https://www.linkedin.com/in/camilavecino/ "LinkedIn da Camila Vecino").
