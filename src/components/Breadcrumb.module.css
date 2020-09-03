@@ -1,0 +1,23 @@
+.breadcrumb {
+  display: flex;
+  gap: 1em;
+  max-width: 600px;
+  margin: 1em auto;
+  font-size: .8em;
+}
+.breadcrumb ol {
+  padding: 0;
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li + li:before {
+  content: ' / ';
+  color: gray;
+}
+.breadcrumb li:last-child a {
+  text-decoration: none;
+  pointer-events: none;
+  opacity: .8;
+}

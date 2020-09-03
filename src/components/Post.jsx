@@ -18,7 +18,7 @@ function Post({ post }) {
         <p className={ styles.summary }>{ post.summary }</p>
       </section>
       <section 
-        className={ styles.content }
+        className="content"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </article>

@@ -1,5 +1,6 @@
 import remark from 'remark';
 import highlight from 'remark-highlight.js';
+import footnotes from 'remark-footnotes';
 import html from 'remark-html';
 
 export async function toHTML(markdown) {
@@ -14,6 +15,7 @@ export async function toHTML(markdown) {
         'bash'
       ]
     })
+    .use(footnotes)
     .use(html)
     .process(markdown);
 

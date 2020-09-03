@@ -1,25 +1,9 @@
 .header,
-.summary,
-.content > * {
+.summary {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-.content figure {
-  max-width: max-content;
-}
-.content figure img {
-  max-width: 100%;
-  border: 2px solid #070c0d;
-}
-.content p > code {
-  padding: 4px;
-  background: #f2f2f2;
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
 .icon {
   font-size: 2em;
   margin-bottom: 0;

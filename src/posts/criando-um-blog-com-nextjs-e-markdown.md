@@ -5,8 +5,6 @@ summary: Um jeito de manter um blog pessoal sem se preocupar com banco de dados,
 date:
   iso: '2020-08-30T20:18:54.073Z'
   formated: 30/08/2020
-seo:
-  ogImage: /assets/blog/dynamic-routing/cover.jpg
 ---
 
 Olá, meu nome é Diogo! Para estrear esse blog começarei por ele mesmo, mostrando como ele foi feito e todas as partes. Mostrando desde o início do desenvolvimento até a subida para produção.
@@ -623,8 +621,8 @@ export function getStaticProps({ params }) {
 
 // Usamos a função do Next.js, getStaticPaths()
 export function getStaticPaths() {
-  // Buscamos todos os slugs de todos os posts
-  const posts = getAllPosts(['slug']);
+  // Buscamos todos os slugs e date de todos os posts
+  const posts = getAllPosts(['slug', 'date']);
 
   return {
     /**

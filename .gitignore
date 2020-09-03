@@ -181,3 +181,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,windows,macos,linux
+
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.map

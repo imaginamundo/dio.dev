@@ -1,12 +1,30 @@
 import React from 'react';
 import Head from 'next/head';
 
+import {
+  generatePostSchema,
+  generateBreadcrumbSchema
+} from 'services/seo.js';
 import { getPost, getAllPosts } from 'services/api.js';
 import markdown from 'services/markdown.js';
 
 import Post from 'components/Post.jsx';
+import Breadcrumb from 'components/Breadcrumb.jsx';
 
 function Page({ post }) {
+  const breadcrumb = [
+    {
+      label: post.title,
+      href: `/${ post.slug }`,
+      current: true
+    }
+  ]
+
+  const schema = [
+    generatePostSchema(post),
+    generateBreadcrumbSchema(breadcrumb)
+  ];
+
   return (
     <>
       <Head>
@@ -23,7 +41,12 @@ function Page({ post }) {
             <meta name="twitter:image:alt" content={ post.title } />
           </>
         }
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </Head>
+      <Breadcrumb items={ breadcrumb } />
       <Post post={ post } />
     </>
   );
@@ -52,7 +75,7 @@ export async function getStaticProps({ params }) {
 }
 
 export function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+  const posts = getAllPosts([ 'slug', 'date' ]);
 
   return {
     paths: posts.map(post => {

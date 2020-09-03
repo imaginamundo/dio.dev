@@ -1,0 +1,26 @@
+{
+  "name": "dio.dev",
+  "short_name": "dio.dev",
+  "icons": [
+    {
+      "src": "/seo/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/seo/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/seo/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f3f1e3",
+  "background_color": "#f3f1e3",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
