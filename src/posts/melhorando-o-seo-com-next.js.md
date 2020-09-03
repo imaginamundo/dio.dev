@@ -11,9 +11,11 @@ date:
 
 SEO (Search engine optimization, ou Otimização para mecanismos de busca) é o processo de aumentar a quantidade e qualidade (para um site de vendas, seriam pessoas que compram seus produtos) do tráfego do seu site aumentando a visibilidade das suas páginas para usuários em um mecanismo e busca.
 
-## Porque melhorar o SEO do seu site?
+## Por que melhorar o SEO do seu site?
 
 Usar os métodos de SEO no seu site melhora a performance deles em mecanismos de busca, esse é o ponto principal para prestar atenção nas características de SEO. Porém, como um efeito colateral, também temos uma melhoria na experiência de usuário, por exemplo: o seu site para ter uma melhor pontuação em mecanismos de busca, precisa carregar de uma forma mais rápida, e afeta diretamente o desempenho do seu site com os usuários.
+
+Outro ponto é que quanto maior for o seu acesso com mídias orgânicas, menos gastos de investimento em mídia você terá.[^1]
 
 [Quanto mais rápido seu site, maior a retenção de usuários e capacidade de conversão ele tem](https://wpostats.com/ "Estatísticas de foco em performance na web").
 
@@ -25,9 +27,9 @@ Existem muitas práticas para SEO, e quem define essas métricas são os mecanis
 
 O principal aspécto para SEO, porém não autossuficiente (precisa trabalhar em conjunto com outros métodos), que em um simples resumo: seu site precisa carregar com velocidade.
 
-Um site selvagem (ao seu estilo mais cru, apenas HTML) é performático e irá ser carregado de forma rápida[^1]. É claro que um site cru pode não entregar a experiência que sua empresa, gosto pessoal, equipe almejam, então nós complicamos as coisas para melhorar (ou piorar) a experiência do usuário.
+Um site selvagem (ao seu estilo mais cru, apenas HTML) é performático e irá ser carregado de forma rápida[^2]. É claro que um site cru pode não entregar a experiência que sua empresa, gosto pessoal, equipe almejam, então nós complicamos as coisas para melhorar (ou piorar) a experiência do usuário.
 
-[^1]: Temos mais peças nesse jogo, como a diferença da distância de onde o site está hospedado e onde o usuário está, se nossa hospedagem consegue enviar uma resposta rápida, entre alguns outros detalhes.
+[^2]: Temos mais peças nesse jogo, como a diferença da distância de onde o site está hospedado e onde o usuário está, se nossa hospedagem consegue enviar uma resposta rápida, entre alguns outros detalhes.
 
 O que podemos fazer quando queremos um site mais dinâmico é ter algumas preocupações como:
 
@@ -135,8 +137,11 @@ Funcionar sem internet (com o cache) é uma característica boa não só para o 
 
 Existem algumas ferramentas para medir a qualidade do seu site (SEO e Performance), aqui citarei duas que uso com mais frequência.
 
-- [**Google Lighthouse:**](https://developers.google.com/web/tools/lighthouse/) Uma ferramenta que mede usabilidade, performance, responsividade e o qual PWA seu site está.
-- [**Moz.com:**](https://moz.com/domain-analysis) Análise de domínio da MOZ te traz uma boa quantidade de dados sobre como está o SEO do seu site.
+- [**Google Lighthouse**](https://developers.google.com/web/tools/lighthouse/)**:** Uma ferramenta que mede usabilidade, performance, responsividade e o qual PWA seu site está.
+- [**Moz.com:**](https://moz.com/domain-analysis) Análise de domínio da MOZ te traz uma boa quantidade de dados sobre como está o SEO do seu site;
+- [**Ferramenta de teste de dados estruturados da Google**](https://search.google.com/structured-data/testing-tool/u/0/?hl=pt-BR)**:** Ferramenta da Google para testar dados estruturados[^1];
+- [**PageSpeed Insights**](https://developers.google.com/speed/pagespeed/insights/)**:** Versão do Google Lighthouse para web[^1];
+- [**Google Mobile Friendly**](https://search.google.com/test/mobile-friendly)**:** Validação da Google se a página funciona corretamente em dispositivos móveis[^1].
 
 ### Algumas coisas a mais
 
@@ -564,3 +569,5 @@ Isso irá adicionar o Schema para o nosso artigo, ajudando a Google a interpreta
 Essas são as mudanças mais rápidas para se fazer, existem outras coisas que melhoram o acesso de mecanimo de busca, como `sitemap.xml`, [breadcrumbs](https://schema.org/BreadcrumbList "Documentação do schema de Breadcrumb") e muitos outros.
 
 Em conclusão, utilize a maioria possível de métodos se você quer bons resultados de visitas organicas no seu site.
+
+[^1]: Sugestão de melhoria enviada por [Camila Vercino](https://www.linkedin.com/in/camilavecino/ "LinkedIn da Camila Vecino).
