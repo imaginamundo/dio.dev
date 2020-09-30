@@ -1,5 +1,5 @@
 ---
-icon: 🚀
+icon: 🎨
 title: Modelos de interface para multiplas páginas com Next.js
 summary: Como replicar modelos de interface de forma performática de de fácil manutenção.
 date:
