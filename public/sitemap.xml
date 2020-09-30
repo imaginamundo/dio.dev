@@ -13,4 +13,9 @@
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://dio.dev/modelos-de-interface-para-multiplas-paginas-com-next.js</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
 </urlset>

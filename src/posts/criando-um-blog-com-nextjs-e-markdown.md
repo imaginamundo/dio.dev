@@ -84,7 +84,7 @@ Remark é um processador de Markdown que nos permite transforma-los em HTML e ex
 1. Node irá ler cada arquivo Markdown com o Remark e criará um *Array* com cada objeto de Markdown guardando todas as informações, isso funcionará como nosso *CMS* (*Content Management System*, ou gestor de conteúdo).
 
 <figure>
-  <img src="/node-lendo-markdowns.png" alt="Diagrama mostrando o node lendo markdowns">
+  <img src="/node-lendo-markdowns.png" alt="Diagrama mostrando o node lendo markdowns" title="Diagrama mostrando o node lendo markdowns">
 </figure>
 
 2. O Next.js terá acesso a esse *Array* e irá tanto criar todas as rotas necessárias, como também passar as informações para cada rota.
