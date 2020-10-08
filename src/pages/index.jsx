@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { getAllPosts } from 'services/api.js';
 
 import Breadcrumb from 'components/Breadcrumb.jsx';
+import HomeHeader from 'components/HomeHeader.jsx';
 import PostsList from 'components/PostsList.jsx';
 
 function Page({ posts }) {
@@ -23,6 +24,7 @@ function Page({ posts }) {
         <meta name="twitter:image:alt" content={ meta.title } />
       </Head>
       <Breadcrumb />
+      <HomeHeader />
       <PostsList posts={ posts } />
     </>
   );

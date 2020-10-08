@@ -3,3 +3,8 @@
   margin-left: auto;
   margin-right: auto;
 }
+.postTitle {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}

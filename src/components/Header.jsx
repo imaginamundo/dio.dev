@@ -25,7 +25,7 @@ function Header() {
         </a>
         { ' ' }
         <a
-          href="https://instagr.am/fotografolixo"
+          href="https://instagram.com/fotografolixo"
           title="Abrir Instagram numa nova aba"
           target="_blank"
           rel="noopener"
