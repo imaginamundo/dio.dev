@@ -12,7 +12,7 @@ function Post({ post }) {
             { post.date.formated }
           </time>
         </p>
-        <Sharer />
+        <Sharer title={ post.title } />
       </header>
       <section className={ styles.summary }aria-label="summary">
         <p className={ styles.summary }>{ post.summary }</p>
