@@ -4,7 +4,7 @@ import styles from './Sharer.module.css';
 const Sharer = ({ title }) => {
   const urlInput = useRef(null);
   const [ url, setUrl ] = useState(null);
-  const [ open, setOpen ] = useState(true);
+  const [ open, setOpen ] = useState(false);
   const safeUrl = encodeURIComponent(url);
 
   const shareOptions = {
