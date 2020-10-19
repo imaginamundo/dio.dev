@@ -1,5 +1,4 @@
-import React from 'react';
-
+import Sharer from 'components/Sharer.jsx';
 import styles from './Post.module.css';
 
 function Post({ post }) {
@@ -13,6 +12,7 @@ function Post({ post }) {
             { post.date.formated }
           </time>
         </p>
+        <Sharer />
       </header>
       <section className={ styles.summary }aria-label="summary">
         <p className={ styles.summary }>{ post.summary }</p>

@@ -18,6 +18,7 @@ function Page({ posts }) {
       <Head>
         <title>{ meta.title }</title>
         <meta name="Description" content={ meta.description } />
+        <meta property="og:title" content={ meta.title } />
         <meta property="og:description" content={ meta.description } />
         <meta property="og:url" content="https://dio.dev" />
         <meta property="og:type" content="blog" />
