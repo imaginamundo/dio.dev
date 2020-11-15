@@ -21,10 +21,12 @@ const Sharer = ({ title }) => {
 
   function share() {
     if (navigator.share) {
-      navigator.share({
-        title,
-        url
-      });
+      navigator
+        .share({
+          title,
+          url
+        })
+        .catch(e => {});
     } else {
       setOpen(!open);
     }
@@ -41,13 +43,13 @@ const Sharer = ({ title }) => {
   }
 
   return (
-    <div class={ styles.share }>
+    <span className={ styles.share }>
       <button onClick={ share }>
         Compartilhar
       </button>
       {
         open &&
-        <span class={ styles.shareDialog }>
+        <span className={ styles.shareDialog }>
           <button onClick={ closeDialog }>
             ×
           </button>
@@ -70,7 +72,7 @@ const Sharer = ({ title }) => {
           <button onClick={ copyUrl }>Copiar url</button>
         </span>
       }
-    </div>
+    </span>
   );
 }
 

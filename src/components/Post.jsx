@@ -5,14 +5,19 @@ function Post({ post }) {
   return (
     <article>
       <header className={ styles.header }>
-        <p className={ styles.icon }>{ post.icon }</p>
+        <p>
+          <span className={ styles.icon }>
+            { post.icon }
+            <Sharer title={ post.title } />
+          </span>
+        </p>
         <h1 className={ styles.title }>{ post.title }</h1>
         <p className={ styles.date }>
           <time dateTime={ post.date.iso }>
             { post.date.formated }
           </time>
         </p>
-        <Sharer title={ post.title } />
+        
       </header>
       <section className={ styles.summary }aria-label="summary">
         <p className={ styles.summary }>{ post.summary }</p>
