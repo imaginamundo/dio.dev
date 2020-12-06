@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import styles from './DarkMode.module.css';
 
 const DarkModeContext = createContext(false);
 
@@ -11,12 +12,10 @@ export default function DarkModeToggle() {
   }
 
   return (
-    <div>
-      <label>
-        <input type="checkbox" checked={ dark } onChange={ updateViewMode } />
-        Escuro
-      </label>
-    </div>
+    <label className={ styles.label }>
+      <input type="checkbox" checked={ dark } onChange={ updateViewMode } />
+      Escuro
+    </label>
   );
 }
 
