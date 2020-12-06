@@ -56,7 +56,7 @@ Mas com a função de exibição, também precisamos de ferramentas para consegu
 - **HTML:** Marcação de que tipo de conteúdo foi adicionado na página, como imagens, paragrafos, vídeos entre muitos outros;
 - **CSS:** Linguagem de programação (👀) de interface, conseguimos falar onde cada elemento html vai se posicionar na tela, alterar cores, fazer condições de como a página ficará exibida em cada tipo de dispositivo, impressão, fontes entre muitas outras coisas;
 - **Javascript:** Linguagem de programação no navegador que nos permite interações com o HTML e o CSS, como expandir algo quando for clicado, guardados dados em cookies, memória, enviar requisições para outros servidores para buscar dados, e muito mais;
-- **WASM (Web Assembly):** Uma línguagem de programação mais baixo nível dentro do navegador, ainda está dandos seus primeiros passos mas com resultados bastante promissores.
+- **WASM (Web Assembly):** Uma línguagem de programação mais baixo nível dentro do navegador, ainda está dando seus primeiros passos mas com resultados bastante promissores.
 
 Com o foco do browser sendo em exibição, geralmente fazemos requisições a servidores para buscar os dados que precisamos para preencher nossa tela com dados. Também existe a possibilidade de fazer igual a este blog, o HTML com os dados diretamente nele (mas usando um facilidator que é ter um sistema que lê meus arquivos que são os artigos e os transformam em HTML simples).
 
