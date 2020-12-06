@@ -21,7 +21,9 @@
     "remark": "^13.0.0",
     "remark-footnotes": "^3.0.0",
     "remark-highlight.js": "^6.0.0",
-    "remark-html": "^13.0.1",
+    "remark-html": "^13.0.1"
+  },
+  "devDependencies": {
     "webpack": "^4.44.2"
   }
 }
