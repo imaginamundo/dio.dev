@@ -32,7 +32,7 @@ Como no exemplo do Instagram, em suas mensagens pessoais, você não consegue ve
 
 Na imagem acima existe um ciclo incompleto de como o usuário solicita as próprias mensagens. Está faltando a parte de autenticação, que é o jeito usado para validar o usuário e quais são os dados que ele pode ter acesso.
 
-A primeira mensagem mostra que o usuário está solicitando para ver suas mensagens. Isso é basicamente ele entrar no site e clicar no botão que lembra um avião de origami. Isso está no front-end.
+A primeira mensagem da imagem mostra que o usuário está solicitando para ver suas mensagens. Isso é basicamente ele entrar no site e clicar no botão que lembra um avião de origami. Isso está no front-end.
 
 Esse clique do usuário é um gatilho para o servidor, que recebe qual foi a intenção do usuário, e possívelmente também os dados de autenticação dele (que podem estar guardados em cookies, localStorage, sessionStorage, até em memória no browser).
 
