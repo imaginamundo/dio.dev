@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import DarkMode from './DarkMode.jsx';
 
 import styles from './Breadcrumb.module.css';
 
-function Breadcrumb({ items = [] }) {
+export default function Breadcrumb({ items = [] }) {
   return (
     <nav className={ styles.breadcrumb } aria-label="Breadcrumb">
       <ol>
@@ -35,8 +36,7 @@ function Breadcrumb({ items = [] }) {
           })
         }
       </ol>
+      <DarkMode />
     </nav>
   );
 }
-
-export default Breadcrumb;
