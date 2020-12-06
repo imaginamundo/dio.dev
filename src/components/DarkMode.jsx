@@ -28,10 +28,7 @@ export function DarkModeHoc({ children }) {
     if (darkMode) {
       const dark = darkMode === 'true';
       setDark(dark);
-    } else if (
-      window.matchMedia && 
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    ) {
+    } else if (window?.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDark(true);
       localStorage.setItem('darkMode', true);
     }
