@@ -58,15 +58,3 @@ dd {
 .content .footnotes {
   font-size: .9em;
 }
-
-.dark-mode {
-  background: #000;
-  box-shadow: 0 0 0 1em #000;
-  color: #fff;
-}
-.dark-mode a {
-  color: #a4f4ff;
-}
-.dark-mode a:visited {
-  color: #d19de4;
-}

@@ -14,7 +14,7 @@ export default function DarkModeToggle() {
     <div>
       <label>
         <input type="checkbox" checked={ dark } onChange={ updateViewMode } />
-        Modo noturno
+        Escuro
       </label>
     </div>
   );
@@ -39,7 +39,25 @@ export function DarkModeHoc({ children }) {
 
   return (
     <DarkModeContext.Provider value={ [ dark, setDark ] }>
-      <div className={ className }>{ children }</div>
+      {
+        dark &&
+        <style global jsx>
+          { `
+            body {
+              background: #000;
+              box-shadow: 0 0 0 1em #000;
+              color: #fff;
+            }
+            a {
+              color: #a4f4ff;
+            }
+            a:visited {
+              color: #d19de4;
+            }
+          `}
+        </style>
+      }
+      { children }
     </DarkModeContext.Provider>
   );
 }
