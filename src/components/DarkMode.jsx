@@ -1,25 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from './DarkMode.module.css';
 
-const DarkModeContext = createContext(false);
-
 export default function DarkModeToggle() {
-  const [ dark, setDark ] = useContext(DarkModeContext);
-
-  function updateViewMode() {
-    localStorage.setItem('darkMode', !dark);
-    setDark(!dark);
-  }
-
-  return (
-    <label className={ styles.label }>
-      <input type="checkbox" checked={ dark } onChange={ updateViewMode } />
-      Escuro
-    </label>
-  );
-}
-
-export function DarkModeHoc({ children }) {
   const [ dark, setDark ] = useState(false);
 
   useEffect(() => {
@@ -33,11 +15,13 @@ export function DarkModeHoc({ children }) {
     }
   }, []);
 
-  let className = null;
-  if (dark) className = 'dark-mode';
+  function updateViewMode() {
+    localStorage.setItem('darkMode', !dark);
+    setDark(!dark);
+  }
 
   return (
-    <DarkModeContext.Provider value={ [ dark, setDark ] }>
+    <label className={ styles.label }>
       {
         dark &&
         <style global jsx>
@@ -56,7 +40,8 @@ export function DarkModeHoc({ children }) {
           `}
         </style>
       }
-      { children }
-    </DarkModeContext.Provider>
+      <input type="checkbox" checked={ dark } onChange={ updateViewMode } />
+      Escuro
+    </label>
   );
 }
