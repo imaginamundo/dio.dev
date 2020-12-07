@@ -58,3 +58,6 @@ dd {
 .content .footnotes {
   font-size: .9em;
 }
+.content figcaption {
+  font-size: .8em
+}
