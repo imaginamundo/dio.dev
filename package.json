@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "sitemap": "next-sitemap",
     "start": "next start"
   },
   "author": "",

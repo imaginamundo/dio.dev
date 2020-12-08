@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 
 import DefaultLayout from 'components/layouts/Default.jsx';
@@ -8,6 +8,7 @@ import './_app-highlight.css';
 
 function CustomApp({ Component, pageProps }) {
   const { Layout = DefaultLayout } = Component;
+
   return (
     <Layout>
       <Head>
