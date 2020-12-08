@@ -1,6 +1,7 @@
 .share {
   position: relative;
   text-align: right;
+  font-size: .5em;
 }
 .shareDialog {
   position: absolute;
