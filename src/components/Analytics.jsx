@@ -56,7 +56,7 @@ export default function Page({ env }) {
         error && <p>Falha ao carregar dados :(</p>
       }
 
-      <p>Dados estraídos apenas utilizando os dados de requisição do site sem a utilização de <code>cookies</code> ou <code>localStorage</code>.</p>
+      <p>Dados extraídos apenas utilizando os dados de requisição do site sem a utilização de <code>cookies</code> ou <code>localStorage</code>.</p>
       <p>Criado com <a href="https://deno.land" target="_blank">Deno</a> e <a href="https://oakserver.github.io/oak/" target="_blank">Oak</a> para testes.</p>
       <p>Os dados não são salvos em nenhum banco de dados e ficam apenas na memória do servidor hospedado no <a href="https://www.heroku.com" target="_blank">Heroku</a>. Por ser hospedado numa conta gratuíta no Heroku, quando a aplicação entra no modo hibernação, todos os dados são apagados (não quero resolver isso agora 🤷‍♂️).</p>
       <p>O repositório do sistema de Analytics está no GitHub: <a href="https://github.com/imaginamundo/analytics" target="_blank">Acessar repositório no GitHub</a>.</p>
