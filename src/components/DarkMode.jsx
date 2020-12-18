@@ -37,6 +37,9 @@ export default function DarkModeToggle() {
             a:visited {
               color: #d19de4;
             }
+            td, th {
+              border-color: #fff;
+            }
           `}
         </style>
       }
