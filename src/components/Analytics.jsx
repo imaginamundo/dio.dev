@@ -32,7 +32,7 @@ export default function Page({ env }) {
             <tbody>
               {
                 Object.entries(data.urls)
-                  .sort((a, b) => a[1].count - b[1].count)
+                  .sort((a, b) => b[1].count - a[1].count)
                   .map(([ url, { count } ]) => {
                   url = url.replace('https://dio.dev', '');
                   return (
