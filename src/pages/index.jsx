@@ -12,7 +12,7 @@ function Page({ posts }) {
     title: 'dio.dev · Blog de um desenvolvedor',
     description: 'Blog pessoal do Diogo Ferreira Fernandes, para compartilhar conteúdos sobre tecnologia, desenvolvimento entre outros.'
   };
-  
+
   return (
     <>
       <Head>

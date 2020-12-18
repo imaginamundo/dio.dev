@@ -1,13 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
+import Router from 'next/router';
 
 import DefaultLayout from 'components/layouts/Default.jsx';
 
 import './_app.css';
 import './_app-highlight.css';
 
+Router.events.on('routeChangeComplete', () => {
+  fetch('https://analytics-simple.herokuapp.com/update')
+}); 
+
 function CustomApp({ Component, pageProps }) {
   const { Layout = DefaultLayout } = Component;
+
+  useEffect(() => {
+    fetch('https://analytics-simple.herokuapp.com/update');
+  }, []);
 
   return (
     <Layout>
