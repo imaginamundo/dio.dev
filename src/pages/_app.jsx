@@ -9,13 +9,19 @@ import './_app-highlight.css';
 
 Router.events.on('routeChangeComplete', () => {
   fetch('https://analytics-simple.herokuapp.com/update')
+    .then(res => res.text())
+    .then(console.log)
+    .catch(console.log);
 }); 
 
 function CustomApp({ Component, pageProps }) {
   const { Layout = DefaultLayout } = Component;
 
   useEffect(() => {
-    fetch('https://analytics-simple.herokuapp.com/update');
+    fetch('https://analytics-simple.herokuapp.com/update')
+      .then(res => res.text())
+      .then(console.log)
+      .catch(console.log);
   }, []);
 
   return (
