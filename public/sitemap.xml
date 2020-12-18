@@ -1,5 +1,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dio.dev/analytics</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://dio.dev</loc>
     <changefreq>weekly</changefreq>
   </url>
