@@ -57,7 +57,13 @@ registerRoute(
   /\.(?:js)$/i,
   new StaleWhileRevalidate({
     cacheName: 'static-js-assets',
-    plugins: [new ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400, purgeOnQuotaError: !0 })]
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 32,
+        maxAgeSeconds: 86400,
+        purgeOnQuotaError: !0
+      })
+    ]
   }),
   'GET'
 );
@@ -65,7 +71,13 @@ registerRoute(
   /\.(?:css)$/i,
   new StaleWhileRevalidate({
     cacheName: 'static-style-assets',
-    plugins: [new ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400, purgeOnQuotaError: !0 })]
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 32,
+        maxAgeSeconds: 86400,
+        purgeOnQuotaError: !0
+      })
+    ]
   }),
   'GET'
 );
@@ -73,7 +85,13 @@ registerRoute(
   /\.(?:json|xml|csv)$/i,
   new NetworkFirst({
     cacheName: 'static-data-assets',
-    plugins: [new ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400, purgeOnQuotaError: !0 })]
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 32,
+        maxAgeSeconds: 86400,
+        purgeOnQuotaError: !0
+      })
+    ]
   }),
   'GET'
 );
@@ -82,7 +100,13 @@ registerRoute(
   new NetworkFirst({
     cacheName: 'apis',
     networkTimeoutSeconds: 10,
-    plugins: [new ExpirationPlugin({ maxEntries: 16, maxAgeSeconds: 86400, purgeOnQuotaError: !0 })]
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 16,
+        maxAgeSeconds: 86400,
+        purgeOnQuotaError: !0
+      })
+    ]
   }),
   'GET'
 );
@@ -91,7 +115,13 @@ registerRoute(
   new NetworkFirst({
     cacheName: 'others',
     networkTimeoutSeconds: 10,
-    plugins: [new ExpirationPlugin({ maxEntries: 32, maxAgeSeconds: 86400, purgeOnQuotaError: !0 })]
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 32,
+        maxAgeSeconds: 86400,
+        purgeOnQuotaError: !0
+      })
+    ]
   }),
   'GET'
 );
