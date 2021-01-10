@@ -1,4 +1,5 @@
 const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
  
 module.exports = withPWA({
   webpack: (config, { isServer }) => {
@@ -10,6 +11,7 @@ module.exports = withPWA({
   pwa: {
     disable: process.env.NODE_ENV === 'development',
     dest: 'public',
-    swSrc: 'service-worker.js'
+    swSrc: 'service-worker.js',
+    runtimeCaching
   }
 });
