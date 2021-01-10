@@ -8,7 +8,11 @@
     "build": "next build",
     "start": "next start"
   },
-  "author": "",
+  "author": "Diogo Ferreira Fernandes",
+  "repository": {
+    "type": "git",
+    "url":  "git://github.com/imaginamundo/dio.dev.git"
+  },
   "license": "ISC",
   "dependencies": {
     "globby": "^11.0.1",
