@@ -27,6 +27,6 @@
     "remark-html": "^13.0.1"
   },
   "devDependencies": {
-    "webpack": "^4.44.2"
+    "webpack": "^5.12.3"
   }
 }
