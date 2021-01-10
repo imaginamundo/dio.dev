@@ -8,6 +8,10 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://dio.dev/offline</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://dio.dev/caminho-dos-dados</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>

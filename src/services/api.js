@@ -9,7 +9,7 @@ function getMarkdownsFiles() {
 }
 
 export function getPost(slugOrFilename, fields = []) {
-  const slug = slugOrFilename.replace(/\.md$/, '');
+  const slug = slugOrFilename.slice(0, -3);
   const directory = join(postsDirectory, `${ slug }.md`);
   const markdownContent = fs.readFileSync(directory, 'utf8');
   const { data, content } = matter(markdownContent);
