@@ -8,11 +8,11 @@ const Sharer = ({ title }) => {
   const safeUrl = encodeURIComponent(url);
 
   const shareOptions = {
-    ['WhatsApp']: `whatsapp://send?text=${ title } ${ safeUrl }`,
-    ['Twitter']: `https://twitter.com/intent/tweet?url=${ safeUrl }&text=${ title }`,
-    ['Facebook']: `http://www.facebook.com/sharer/sharer.php?u=${ safeUrl }`,
-    ['LinkedIn']: `http://www.linkedin.com/shareArticle?mini=true&amp;url=${ safeUrl }`,
-    ['E-mail']: `mailto:?Subject=${ title }&amp;Body=${ url }`
+    'WhatsApp': `whatsapp://send?text=${ title } ${ safeUrl }`,
+    'Twitter': `https://twitter.com/intent/tweet?url=${ safeUrl }&text=${ title }`,
+    'Facebook': `http://www.facebook.com/sharer/sharer.php?u=${ safeUrl }`,
+    'LinkedIn': `http://www.linkedin.com/shareArticle?mini=true&amp;url=${ safeUrl }`,
+    'E-mail': `mailto:?Subject=${ title }&amp;Body=${ url }`
   }
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const Sharer = ({ title }) => {
           {
             Object.entries(shareOptions).map(([ socialNetwork, url ]) => {
               return (
-                <a href={ url } className={ styles.shareLink }>
+                <a href={ url } key={ `social-${ socialNetwork }` } className={ styles.shareLink }>
                   { socialNetwork }
                 </a>
               );
@@ -66,10 +66,11 @@ const Sharer = ({ title }) => {
             type="text"
             ref={ urlInput }
             value={ url }
-            readonly="readonly"
             className={ styles.inputUrl }
+            onFocus={ copyUrl }
+            readOnly
           />
-          <button onClick={ copyUrl }>Copiar url</button>
+          <button onClick={ copyUrl } className={ styles.copyUrl }>Copiar URL</button>
         </span>
       }
     </span>

@@ -2,6 +2,7 @@
   position: relative;
   text-align: right;
   font-size: .5em;
+  margin-left: .5em;
 }
 .shareDialog {
   position: absolute;
@@ -19,7 +20,12 @@
 }
 .shareLink {
   font-size: .9em;
+  color: #2a909e;
 }
 .inputUrl {
-  width: 5em;
+  width: 100%;
+  box-sizing: border-box;
+}
+.copyUrl {
+  white-space: nowrap;
 }

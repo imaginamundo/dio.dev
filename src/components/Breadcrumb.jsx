@@ -7,7 +7,7 @@ import styles from './Breadcrumb.module.css';
 export default function Breadcrumb({ items = [] }) {
   return (
     <nav className={ styles.breadcrumb } aria-label="Breadcrumb">
-      <ol>
+      <ol className={ styles.breadcrumbList }>
         <li>
           <Link href="/">
             <a>Página inicial</a>

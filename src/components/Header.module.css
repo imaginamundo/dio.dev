@@ -1,12 +1,14 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .menu {
-  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -.5em;
 }
 .menuItem {
   display: inline-flex;
-}
-.menuItem + .menuItem {
-  margin-left: .5em;
+  margin: 0 .5em;
 }
