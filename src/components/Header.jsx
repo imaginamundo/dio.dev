@@ -18,7 +18,7 @@ function Header() {
           href="https://github.com/imaginamundo"
           title="Abrir GitHub numa nova aba"
           target="_blank"
-          rel="noopener"
+          rel="me"
           className={ styles.menuItem }
         >
           Github
@@ -28,7 +28,7 @@ function Header() {
           href="https://instagram.com/fotografolixo"
           title="Abrir Instagram numa nova aba"
           target="_blank"
-          rel="noopener"
+          rel="me"
           className={ styles.menuItem }
         >
           Instagram
@@ -38,7 +38,7 @@ function Header() {
           href="https://twitter.com/dioruto"
           title="Abrir Twitter numa nova aba"
           target="_blank"
-          rel="noopener"
+          rel="me"
           className={ styles.menuItem }
         >
           Twitter
