@@ -2,9 +2,12 @@ import Sharer from 'components/Sharer.jsx';
 import styles from './Post.module.css';
 
 function Post({ post }) {
+  console.log();
+
   return (
     <article className="h-entry">
       <header className={ styles.header }>
+        <data class="u-url" href={ `https://dio.dev/${ post.slug }` } />
         <p>
           <span className={ styles.icon }>
             { post.icon }
@@ -17,13 +20,12 @@ function Post({ post }) {
             { post.date.formated }
           </time>
         </p>
-        
       </header>
       <section className={ styles.summary }aria-label="summary">
         <p className={ `p-summary ${ styles.summary }` }>{ post.summary }</p>
       </section>
       <section 
-        className="content"
+        className="content e-content"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </article>
