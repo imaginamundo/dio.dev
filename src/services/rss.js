@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-export async function generateRSSFeed(posts) {
-  const items = await generateRSSItems(posts);
+export function generateRSSFeed(posts) {
+  const items = generateRSSItems(posts);
 
   const options = {
     title: 'dio.dev',
