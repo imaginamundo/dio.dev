@@ -5,7 +5,7 @@ function Post({ post }) {
   return (
     <article className="h-entry">
       <header className={ styles.header }>
-        <data class="u-url" href={ `https://dio.dev/${ post.slug }` } />
+        <data className="u-url" href={ `https://dio.dev/${ post.slug }` } />
         <p>
           <span className={ styles.icon }>
             { post.icon }
@@ -19,6 +19,12 @@ function Post({ post }) {
           </time>
         </p>
       </header>
+      {
+        !!post.updatedAt?.formated &&
+        <section className={ styles.updatedAt }>
+          <p>Atualizado no dia <b><time dateTime={ post.updatedAt.iso }>{ post.updatedAt.formated }</time>:</b> { post.updatedAt.reason }</p>
+        </section>
+      }
       <section className={ styles.summary }aria-label="summary">
         <p className={ `p-summary ${ styles.summary }` }>{ post.summary }</p>
       </section>

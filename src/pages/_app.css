@@ -71,3 +71,6 @@ dd {
 .content figcaption {
   font-size: .8em
 }
+.content .video {
+  text-align: center;
+}

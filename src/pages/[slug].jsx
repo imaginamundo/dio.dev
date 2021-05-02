@@ -66,8 +66,6 @@ export async function getStaticProps({ params }) {
 
   const content = await toHTML(post.content || '');
 
-  console.log(content);
-
   return {
     props: {
       post: {
