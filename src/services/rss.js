@@ -28,7 +28,7 @@ export function generateRSSFeed(posts) {
         <language>${ options.language }</language>
         <managingEditor>${ options.managingEditor }</managingEditor>
         <lastBuildDate>${ new Date(options.lastestPostDate).toUTCString() }</lastBuildDate>
-        <atom:link href="http://dio.dev/rss.xml" rel="self" type="application/rss+xml" />${ items }
+        <atom:link href="https://dio.dev/rss.xml" rel="self" type="application/rss+xml" />${ items }
     </channel>
   </rss>`;
 
@@ -44,8 +44,8 @@ function generateRSSItems(posts) {
     items += `
         <item>
           <title>${ post.title }</title>
-          <guid isPermaLink="true">${ `http://dio.dev/${ post.slug }` }</guid>
-          <link>${ `http://dio.dev/${ post.slug }` }</link>
+          <guid isPermaLink="true">${ `https://dio.dev/${ post.slug }` }</guid>
+          <link>${ `https://dio.dev/${ post.slug }` }</link>
           <pubDate>${ new Date(post.createdAt.iso).toUTCString() }</pubDate>
           <description>${ post.summary }</description>
         </item>`;
