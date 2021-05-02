@@ -11,6 +11,7 @@ export default function Footer() {
         <Link href="/analytics">
           <a>Analytics</a>
         </Link>
+        { ' ' }
         <a type="application/rss+xml" href="/rss.xml">RSS Feed</a>
       </p>
     </footer>

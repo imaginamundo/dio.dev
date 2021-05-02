@@ -6,7 +6,7 @@ export async function generateRSSFeed(posts) {
   const options = {
     title: 'dio.dev',
     language: 'pt-br',
-    link: 'https//dio.dev',
+    link: 'https://dio.dev',
     description: 'Blog com artigos sobre desenvolvimento, na maior parte do tempo.',
     lastestPostDate: new Date(posts[0].createdAt.iso).toUTCString(),
     managingEditor: 'diogos.go@gmail.com (Diogo Ferreira Fernandes)',
