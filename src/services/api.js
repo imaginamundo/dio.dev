@@ -30,8 +30,7 @@ export function getAllPosts(fields) {
   const markdowns = getMarkdownsFiles();
   const posts = markdowns
     .map(filename => getPost(filename, fields))
-    // sort posts by date in descending order
-    .sort((a, b) => new Date(b.date.iso) - new Date(a.date.iso));
+    .sort((a, b) => new Date(b.createdAt.iso) - new Date(a.createdAt.iso));
 
   return posts;
 }

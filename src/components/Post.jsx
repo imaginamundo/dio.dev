@@ -16,8 +16,8 @@ function Post({ post }) {
         </p>
         <h1 className={ `p-name ${ styles.title }` }>{ post.title }</h1>
         <p className={ styles.date }>
-          <time dateTime={ post.date.iso } className="dt-published">
-            { post.date.formated }
+          <time dateTime={ post.createdAt.iso } className="dt-published">
+            { post.createdAt.formated }
           </time>
         </p>
       </header>

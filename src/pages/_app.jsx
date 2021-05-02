@@ -79,6 +79,12 @@ function CustomApp({ Component, pageProps }) {
           href="/seo/16.png"
         />
         <link rel="shortcut icon" href="/seo/32.png" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="dio.dev"
+          href="https://dio.dev/rss.xml"
+        />
         
         <link rel="manifest" href="/seo/manifest.json" />
         <meta name="application-name" content="dio.dev" />

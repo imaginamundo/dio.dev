@@ -16,8 +16,8 @@ function PostsList({ posts }) {
                     <a title={ `Ir para o artigo ${ post.title }` }>
                       { post.icon } 
                       { ' ' }
-                      <time dateTime={ post.date.iso }>
-                        { post.date.formated }
+                      <time dateTime={ post.createdAt.iso }>
+                        { post.createdAt.formated }
                       </time>
                       { ' · ' }
                       <strong>{ post.title }</strong>

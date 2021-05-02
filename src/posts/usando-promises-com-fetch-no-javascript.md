@@ -2,7 +2,7 @@
 icon: 🤲
 title: Usando promises com fetch no javascript
 summary: Fazer requisições e tratar seus respectivos erros com o auxilio de promises
-date:
+createdAt:
   iso: '2020-10-08T07:00:06.896Z'
   formated: 08/10/2020
 ---

@@ -2,7 +2,7 @@
 icon: 🚀
 title: Criando um blog estático com Next.js e Markdown
 summary: Um jeito de manter um blog pessoal sem se preocupar com banco de dados, hospedagem e performance.
-date:
+createdAt:
   iso: '2020-08-30T20:18:54.073Z'
   formated: 30/08/2020
 ---

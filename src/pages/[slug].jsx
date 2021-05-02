@@ -5,6 +5,7 @@ import {
   generatePostSchema,
   generateBreadcrumbSchema
 } from 'services/seo.js';
+import { generateRSSFeed } from '../services/rss.js';
 import { getPost, getAllPosts } from 'services/api.js';
 import markdown from 'services/markdown.js';
 
@@ -57,7 +58,7 @@ export async function getStaticProps({ params }) {
     'icon',
     'title',
     'summary',
-    'date',
+    'createdAt',
     'slug',
     'content'
   ]);
@@ -75,7 +76,9 @@ export async function getStaticProps({ params }) {
 }
 
 export function getStaticPaths() {
-  const posts = getAllPosts([ 'slug', 'date' ]);
+  const posts = getAllPosts([ 'title', 'summary', 'createdAt', 'slug', 'content' ]);
+
+  generateRSSFeed(posts);
 
   return {
     paths: posts.map(post => {

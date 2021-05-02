@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+  <rss version="2.0">
+    <channel>
+        <title>dio.dev</title>
+        <link>https//dio.dev</link>
+        <description>Blog com artigos sobre desenvolvimento, na maior parte do tempo.</description>
+        <language>pt-br</language>
+        <managingEditor>diogos.go@gmail.com (Diogo Ferreira Fernandes)</managingEditor>
+        <lastBuildDate>Sun, 18 Apr 2021 18:07:48 GMT</lastBuildDate>
+        <item>
+          <title>CSS para layout</title>
+          <guid isPermaLink="true">http://dio.dev/css-para-layout</guid>
+          <link>http://dio.dev/css-para-layout</link>
+          <pubDate>Sun, 18 Apr 2021 18:07:48 GMT</pubDate>
+          <description>Dicas para desenvolver com HTML e CSS para sites responsivos</description>
+        </item>
+        <item>
+          <title>Caminho dos Dados</title>
+          <guid isPermaLink="true">http://dio.dev/caminho-dos-dados</guid>
+          <link>http://dio.dev/caminho-dos-dados</link>
+          <pubDate>Sun, 06 Dec 2020 18:06:59 GMT</pubDate>
+          <description>Entendendo a línha tênue entre Back-end e Front-end, e onde os dados são tratatos (tanto servidor ou navegador)</description>
+        </item>
+        <item>
+          <title>Usando promises com fetch no javascript</title>
+          <guid isPermaLink="true">http://dio.dev/usando-promises-com-fetch-no-javascript</guid>
+          <link>http://dio.dev/usando-promises-com-fetch-no-javascript</link>
+          <pubDate>Thu, 08 Oct 2020 07:00:06 GMT</pubDate>
+          <description>Fazer requisições e tratar seus respectivos erros com o auxilio de promises</description>
+        </item>
+        <item>
+          <title>Modelos de interface para multiplas páginas com Next.js</title>
+          <guid isPermaLink="true">http://dio.dev/modelos-de-interface-para-multiplas-paginas-com-next.js</guid>
+          <link>http://dio.dev/modelos-de-interface-para-multiplas-paginas-com-next.js</link>
+          <pubDate>Wed, 30 Sep 2020 13:04:35 GMT</pubDate>
+          <description>Como replicar modelos de interface de forma performática de fácil manutenção.</description>
+        </item>
+        <item>
+          <title>Melhorando SEO com o Next.js</title>
+          <guid isPermaLink="true">http://dio.dev/melhorando-o-seo-com-next.js</guid>
+          <link>http://dio.dev/melhorando-o-seo-com-next.js</link>
+          <pubDate>Thu, 03 Sep 2020 15:02:37 GMT</pubDate>
+          <description>Métodos para melhorar o SEO de um site com Next.js, são várias técnicas conjuntas para obter uma melhor performance de SEO.</description>
+        </item>
+        <item>
+          <title>Criando um blog estático com Next.js e Markdown</title>
+          <guid isPermaLink="true">http://dio.dev/criando-um-blog-com-nextjs-e-markdown</guid>
+          <link>http://dio.dev/criando-um-blog-com-nextjs-e-markdown</link>
+          <pubDate>Sun, 30 Aug 2020 20:18:54 GMT</pubDate>
+          <description>Um jeito de manter um blog pessoal sem se preocupar com banco de dados, hospedagem e performance.</description>
+        </item>
+    </channel>
+  </rss>

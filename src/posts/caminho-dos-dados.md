@@ -2,7 +2,7 @@
 icon: 🛣
 title: Caminho dos Dados
 summary: Entendendo a línha tênue entre Back-end e Front-end, e onde os dados são tratatos (tanto servidor ou navegador)
-date:
+createdAt:
   iso: '2020-12-06T18:06:59.540Z'
   formated: 06/12/2020
 ---

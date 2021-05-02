@@ -2,7 +2,7 @@
 icon: 🥇
 title: Melhorando SEO com o Next.js
 summary: Métodos para melhorar o SEO de um site com Next.js, são várias técnicas conjuntas para obter uma melhor performance de SEO.
-date:
+createdAt:
   iso: '2020-09-03T15:02:37.182Z'
   formated: 03/09/2020
 ---

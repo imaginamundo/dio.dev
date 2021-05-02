@@ -19,11 +19,11 @@ function addPage(page) {
 
 function addPost(post) {
   const path = post
-    .replace('src/posts', '')
+    .replace('src/posts/', '')
     .replace('.md', '');
 
   return `  <url>
-    <loc>https://dio.dev${ path }</loc>
+    <loc>https://dio.dev/${ path }</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>`;
@@ -37,7 +37,8 @@ async function generateSitemap() {
     '!src/pages/404.jsx',
     '!src/pages/[*.jsx',
     '!src/pages/**/[*.jsx',
-    '!src/pages/api'
+    '!src/pages/api',
+    '!src/pages/offline.jsx'
   ]);
 
   const posts = await globby([

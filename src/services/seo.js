@@ -7,8 +7,8 @@ export function generatePostSchema(post) {
       "@id": "https://google.com/article"
     },
     "headline": post.title,
-    "datePublished": post.date.iso,
-    "dateModified": post.modifiedDate?.iso || post.date.iso,
+    "datePublished": post.createdAt.iso,
+    "dateModified": post.modifiedDate?.iso || post.createdAt.iso,
   };
 }
 

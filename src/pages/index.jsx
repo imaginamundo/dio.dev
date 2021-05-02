@@ -36,7 +36,7 @@ export function getStaticProps() {
     'icon',
     'title',
     'summary',
-    'date',
+    'createdAt',
     'slug'
   ]);
 

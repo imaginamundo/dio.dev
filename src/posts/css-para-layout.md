@@ -2,7 +2,7 @@
 icon: 📱  🖥
 title: CSS para layout
 summary: Dicas para desenvolver com HTML e CSS para sites responsivos
-date:
+createdAt:
   iso: '2021-04-18T18:07:48.547Z'
   formated: 18/04/2021
 ---
