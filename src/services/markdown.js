@@ -3,8 +3,8 @@ import highlight from 'remark-highlight.js';
 import footnotes from 'remark-footnotes';
 import html from 'remark-html';
 
-export function toHTML(markdown) {
-  return remark()
+export async function toHTML(markdown) {
+  const stringMarkdown = await remark()
     .use(highlight, {
       include: [
         'css',
@@ -17,8 +17,9 @@ export function toHTML(markdown) {
     })
     .use(footnotes)
     .use(html)
-    .process(markdown)
-    .toString();
+    .process(markdown);
+
+  return stringMarkdown.toString();
 }
 
 export default { toHTML };

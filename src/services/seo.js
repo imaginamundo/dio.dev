@@ -8,7 +8,7 @@ export function generatePostSchema(post) {
     },
     "headline": post.title,
     "datePublished": post.createdAt.iso,
-    "dateModified": post.modifiedDate?.iso || post.createdAt.iso,
+    "dateModified": post.updatedAt?.iso || post.createdAt.iso,
   };
 }
 

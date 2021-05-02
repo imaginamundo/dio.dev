@@ -2,7 +2,6 @@ const fs = require('fs');
 const globby = require('globby');
 
 function addPage(page) {
-  console.log(page);
   const path = page
     .replace('src/pages', '')
     .replace('.jsx', '')

@@ -2,8 +2,6 @@ import Sharer from 'components/Sharer.jsx';
 import styles from './Post.module.css';
 
 function Post({ post }) {
-  console.log();
-
   return (
     <article className="h-entry">
       <header className={ styles.header }>

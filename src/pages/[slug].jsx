@@ -7,7 +7,7 @@ import {
 } from 'services/seo.js';
 import { generateRSSFeed } from '../services/rss.js';
 import { getPost, getAllPosts } from 'services/api.js';
-import markdown from 'services/markdown.js';
+import { toHTML } from 'services/markdown.js';
 
 import Post from 'components/Post.jsx';
 import Breadcrumb from 'components/Breadcrumb.jsx';
@@ -59,11 +59,14 @@ export async function getStaticProps({ params }) {
     'title',
     'summary',
     'createdAt',
+    'updatedAt',
     'slug',
     'content'
   ]);
 
-  const content = await markdown.toHTML(post.content || '');
+  const content = await toHTML(post.content || '');
+
+  console.log(content);
 
   return {
     props: {
