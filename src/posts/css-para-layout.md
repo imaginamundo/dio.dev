@@ -367,7 +367,7 @@ Uma das mais importantes tipo de posição, por que com ela você pode controlar
 </div>
 ```
 
-No exemplo acima inserimos um ícone de iniciar (▶) acima de um texto, porém deixando o alinhamento relativo ao elemento pai com a classe `.play`. Isso significa que os controladores de posição `top`, `right`, `bottom` e `left` estão usando como referencia a posição da `div` com a classe `.play`.
+No exemplo acima inserimos um ícone de iniciar (▶) acima de um texto, porém deixando o alinhamento relativo ao elemento pai com a classe `.play`. Isso significa que os controladores de posição `top`, `right`, `bottom` e `left` estão usando como referência a posição da `div` com a classe `.play`.
 
 Também utilizei de um truque velho para centralizar o íconde de inciar, coloquei 0 nos 4 parametros de controle de posição, defini um tamanho para o ícone utilizando `max-content` para altura e largura e por final, adicionei um `margin: auto`. Isso faz o ícone se alinhar ao centro da div utilizando a div `.play` como referência. É assim que as pessoas geralmente alinham conteúdo acima de imagens para miniaturas de vídeos com um ícone de play.
 

@@ -9,7 +9,7 @@ import PostsList from 'components/PostsList.jsx';
 
 function Page({ posts }) {
   const meta = {
-    title: 'dio.dev · Blog de um desenvolvedor',
+    title: 'dio.dev · Blog de um desenvolvedor frontend',
     description: 'Blog pessoal do Diogo Ferreira Fernandes, para compartilhar conteúdos sobre tecnologia, desenvolvimento entre outros.'
   };
 
