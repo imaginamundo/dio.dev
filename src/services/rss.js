@@ -20,14 +20,15 @@ export async function generateRSSFeed(posts) {
   });
 
   const rss = `<?xml version="1.0" ?>
-  <rss version="2.0">
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>${ options.title }</title>
         <link>${ options.link }</link>
         <description>${ options.description }</description>
         <language>${ options.language }</language>
         <managingEditor>${ options.managingEditor }</managingEditor>
-        <lastBuildDate>${ new Date(options.lastestPostDate).toUTCString() }</lastBuildDate>${ items }
+        <lastBuildDate>${ new Date(options.lastestPostDate).toUTCString() }</lastBuildDate>
+        <atom:link href="http://dio.dev/rss.xml" rel="self" type="application/rss+xml" />${ items }
     </channel>
   </rss>`;
 
