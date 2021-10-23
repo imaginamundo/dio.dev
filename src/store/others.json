@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Controle de PS4 Azul",
+    "price": "150,00",
+    "image": "controle-ps4"
+  },
+  {
+    "title": "Furadeira/Parafusadeira DeWalt 20v - 2 baterias",
+    "price": "500,00",
+    "image": "parafusadeira-dewalt"
+  },
+  {
+    "title": "Afinador Ronsani",
+    "price": "20,00",
+    "image": "afinador"
+  },
+  {
+    "title": "Gimbal Weebill S",
+    "price": "1300,00",
+    "image": "gimbal-weebill-s"
+  },
+  {
+    "title": "Tripé 1,8m",
+    "price": "80,00",
+    "image": "tripe"
+  },
+  {
+    "title": "Violão Nylon Rozini Studio",
+    "price": "200,00",
+    "image": "violao"
+  },
+  {
+    "title": "Jogo de Tabuleiro Dixit",
+    "price": "100,00",
+    "image": "dixit"
+  }
+]

@@ -12,6 +12,5 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === 'development',
     dest: 'public',
     swSrc: 'service-worker.js'
-  },
-  future: { webpack5: true }
+  }
 });

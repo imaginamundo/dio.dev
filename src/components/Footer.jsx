@@ -8,6 +8,10 @@ export default function Footer() {
     <footer className={ styles.footer }>
       <p>Criado por <strong><a rel="author" href="https://dio.dev/" className="h-card u-author p-name">Diogo Ferreira Fernandes</a></strong></p>
       <p>
+        <Link href="/lojinha">
+          <a>Lojinha</a>
+        </Link>
+        { ' ' }
         <Link href="/analytics">
           <a>Analytics</a>
         </Link>

@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Assassins Creed III",
+    "description": "Jogo de Wii U",
+    "price": "10,00",
+    "image": "assassins-creed-iii"
+  },
+  {
+    "title": "Donkey Kong Country Tropical Freeze",
+    "description": "Jogo de Wii U",
+    "price": "20,00",
+    "image": "donkey-kong-country-tropical-freeze"
+  },
+  {
+    "title": "Hyrule Warriors",
+    "description": "Jogo de Wii U",
+    "price": "15,00",
+    "image": "hyrule-warriors"
+  },
+  {
+    "title": "Injustice God Among Us",
+    "description": "Jogo de Wii",
+    "price": "15,00",
+    "image": "injustice-god-among-us"
+  },
+  {
+    "title": "Mario Kart 8",
+    "description": "Jogo de Wii",
+    "price": "40,00",
+    "image": "mario-kart-8"
+  },
+  {
+    "title": "New Super Mario Bros U",
+    "description": "Jogo de Wii U",
+    "price": "30,00",
+    "image": "new-super-mario-bros-u"
+  },
+  {
+    "title": "Nintendo Land",
+    "description": "Jogo de Wii U",
+    "price": "20,00",
+    "image": "nintendo-land"
+  },
+  {
+    "title": "Pikmin 3",
+    "description": "Jogo de Wii U",
+    "price": "40,00",
+    "image": "pikmin-3"
+  },
+  {
+    "title": "Pokemon X",
+    "description": "Jogo de 3DS",
+    "price": "30,00",
+    "image": "pokemon-x"
+  },
+  {
+    "title": "Super Mario 3D World",
+    "description": "Jogo de Wii U",
+    "price": "40,00",
+    "image": "super-mario-3d-world"
+  },
+  {
+    "title": "Super Mario Maker",
+    "description": "Jogo de Wii U",
+    "price": "50,00",
+    "image": "super-mario-maker"
+  },
+  {
+    "title": "Super Smash Bros for Wii U",
+    "description": "Jogo de Wii U",
+    "price": "60,00",
+    "image": "super-smash-bros-for-wii-u"
+  },
+  {
+    "title": "The Legend of Zelda Skyward Sword",
+    "description": "Jogo de Wii",
+    "price": "60,00",
+    "image": "the-legend-of-zelda-skyward-sword"
+  },
+  {
+    "title": "The Legend of Zelda Twilight Princess",
+    "description": "Jogo de Wii",
+    "price": "50,00",
+    "image": "the-legend-of-zelda-twilight-princess"
+  },
+  {
+    "title": "The Legend of Zelda Wind Waker HD",
+    "description": "Jogo de Wii U",
+    "price": "60,00",
+    "image": "the-legend-of-zelda-wind-waker-hd"
+  }
+]
