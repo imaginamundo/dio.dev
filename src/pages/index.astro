@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => 
+	new Date(b.data.publishedAt.iso).getTime() - new Date(a.data.publishedAt.iso).getTime()
+);
+---
+
+<Layout pageTitle="dio.dev · Blog de um desenvolvedor frontend" centered={true}>
+	<h1>Blog com artigos sobre desenvolvimento, na maior parte do tempo.</h1>
+	<section class="blog-posts" itemscope itemtype="http://schema.org/Blog">
+		{sortedPosts.map(post => (
+			<article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+				<h2>
+					<a href={`/${post.slug}`}>
+						{post.data.icon} {post.data.publishedAt.formated} · {post.data.title}
+					</a>
+				</h2>
+				<p>{post.data.description}</p>
+			</article>
+		))}
+	</section>
+</Layout>

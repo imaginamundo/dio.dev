@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const breadcrumb = [{
+  title: entry.data.title,
+  href: `/${entry.slug}`
+}];
+---
+<Layout pageTitle={`${entry.data.title} · dio.dev`} breadcrumb={breadcrumb}>
+  <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 itemprop="headline">{entry.data.icon} {entry.data.title}</h1>
+      <p><time itemprop="datePublished" datetime={entry.data.publishedAt.iso}>{entry.data.publishedAt.formated}</time></p>
+    </header>
+    <p aria-label="summary">{entry.data.description}</p>
+    <Content />
+    <footer>
+      <p>Escrito por:
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <a href="http://instagram.com/fotografolixo" itemprop="url" target="_blank">
+            <span itemprop="name">Diogo Ferreira Fernandes</span>
+          </a>
+        </span>
+      </p>
+    </footer>
+  </article>
+</Layout>
