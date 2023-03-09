@@ -1,0 +1,228 @@
+---
+import SEO from '../components/SEO.astro';
+const { pageTitle, breadcrumb, centered } = Astro.props;
+const navItems = [
+  { title: 'Github', href: 'https://github.com/imaginamundo' },
+  { title: 'Instagram', href: 'https://instagram.com/fotografolixo' },
+  { title: 'Twitter', href: 'https://twitter.com/dioruto' },
+]
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <SEO pageTitle={pageTitle} />
+  <meta name="generator" content={Astro.generator} />
+  <style is:global>
+    @font-face {
+      font-family: 'Fraunces';
+      src:url('/fonts/Fraunces.woff') format('woff'),
+          url('/fonts/Fraunces.woff2') format('woff2'),
+          url('/fonts/Fraunces.svg#Fraunces-VariableFont_SOFTWONKopszwght') format('svg'),
+          url('/fonts/Fraunces.eot'),
+          url('/fonts/Fraunces.eot?#iefix') format('embedded-opentype'),
+          url('/fonts/Fraunces.ttf') format('truetype');
+      font-weight: 100 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --max-width: 600px;
+      --spacing: 1rem;
+
+      --font: sans-serif;
+      --font-size: 18px;
+      --line-height: 1.62em;
+
+      --foreground: #000;
+      --background: #fff;
+      --background-code: #e5e7e8;
+      --link: #5A5A9F;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --foreground: #fff;
+        --background: #000;
+        --background-code: #36393d;
+        --foreground-code: #fff;
+        --link: #a4a3ff;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: var(--font-size);
+      color: var(--foreground);
+      background: var(--background);
+      line-height: var(--line-height);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      html {
+        color-scheme: dark;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      color: var(--link);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+      font-family: Fraunces, serif;
+      font-weight: 700;
+      line-height: 1em;
+    }
+    
+    h1 + p {
+      margin-top: 0;
+    }
+
+    dl h2 {
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+
+    dd {
+      margin-left: 0;
+      margin-bottom: var(--spacing);
+    }
+
+    .content > *,
+    .container {
+      max-width: var(--max-width);
+      margin-inline: auto;
+      padding-inline: var(--spacing);
+    }
+
+    .content h1 {
+      font-size: 2.25em;
+      margin-bottom: 0;
+    }
+
+    .content figure {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .content ol,
+    .content ul {
+      list-style-position: inside;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding-block: var(--spacing);
+    }
+
+    .header ul {
+      list-style: none;
+      margin: 0;
+    }
+
+    .header li {
+      display: inline;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .breadcrumb {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: .8em;
+    }
+
+    .breadcrumb li {
+      display: inline;
+    }
+
+    .breadcrumb li + li:before {
+      content: ' · ';
+    }
+
+    .breadcrumb li:last-child a {
+      pointer-events: none;
+      opacity: .8;
+    }
+
+    .breadcrumb li:last-child a:hover {
+      text-decoration: none;
+    }
+
+    .blog-posts h2 {
+      margin-bottom: .3em;
+    }
+
+    .blog-posts h2 + p {
+      margin-top: 0;
+      margin-bottom: 1.5em;
+    }
+
+    .astro-code {
+      padding: var(--spacing);
+      border: 1px solid #444
+    }
+
+    code:not(.astro-code code) {
+      padding: .125rem .25rem;
+      background: var(--background-code);
+      color: var(--foreground-code);
+    }
+  </style>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <header class="container header">
+    <strong><a href="/" title="Ir para página inicial" class="diodev">dio.dev</a></strong>
+    <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <ul>
+        {
+          navItems.map(item => (
+            <li>
+              <a href={item.href} itemprop="url">{item.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </header>
+  <nav class="container" aria-label="breadcrumb">
+    <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/" itemprop="item">
+          <span itemprop="name">Página Inicial</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      {
+        breadcrumb && breadcrumb.map((item: { href: string | URL | null | undefined; title: string; }, index: number) => (
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href={item.href} itemprop="item">
+              <span itemprop="name">{item.title}</span>
+            </a>
+            <meta itemprop="position" content={(index + 2).toString()} />
+          </li>
+        ))
+      }
+    </ol>
+  </nav>
+  <main class:list={{container: centered}}>
+    <slot />
+  </main>
+  <footer class="content">
+    <p>
+      <a href="/rss.xml">RSS Feed</a>
+    </p>
+  </footer>
+</body>
+</html>
