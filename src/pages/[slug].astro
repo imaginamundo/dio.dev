@@ -17,7 +17,7 @@ const breadcrumb = [{
   href: `/${entry.slug}`
 }];
 ---
-<Layout pageTitle={`${entry.data.title} · dio.dev`} breadcrumb={breadcrumb}>
+<Layout title={`${entry.data.title} · dio.dev`} description={ entry.data.description } breadcrumb={breadcrumb}>
   <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 itemprop="headline">{entry.data.icon} {entry.data.title}</h1>

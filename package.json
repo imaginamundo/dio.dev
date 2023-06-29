@@ -11,9 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.2.0",
-    "astro": "^2.1.2",
+    "@astrojs/rss": "^2.4.3",
+    "astro": "^2.7.2",
     "markdown-it": "^13.0.1",
-    "sanitize-html": "^2.10.0"
+    "sanitize-html": "^2.11.0"
   }
 }

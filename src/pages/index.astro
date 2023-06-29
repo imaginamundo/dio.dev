@@ -8,7 +8,7 @@ const sortedPosts = posts.sort((a, b) =>
 );
 ---
 
-<Layout pageTitle="dio.dev · Blog de um desenvolvedor frontend" centered={true}>
+<Layout title="dio.dev · Blog de um desenvolvedor frontend" description="Blog com artigos sobre desenvolvimento, na maior parte do tempo." centered={true}>
 	<h1>Blog com artigos sobre desenvolvimento, na maior parte do tempo.</h1>
 	<section class="blog-posts" itemscope itemtype="http://schema.org/Blog">
 		{sortedPosts.map(post => (
