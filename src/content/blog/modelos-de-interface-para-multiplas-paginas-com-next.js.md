@@ -258,4 +258,4 @@ Desse jeito mais simples conseguimos criar modelos que são fáceis de utilizar,
 
 [Baixar o exemplo completo de modelos que construímos nesse artigo](https://dio.dev/modelos.rar).
 
-Se você conhece algum outro jeito que possa ser melhor, me manda um bizu no [Twitter](https://twitter.com/dioruto "Twitter do Diogo")
+Se você conhece algum outro jeito que possa ser melhor, me manda um bizu no [Instagram](https://instagr.am/fotografolixo "Instagram do Diogo").

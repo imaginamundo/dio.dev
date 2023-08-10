@@ -406,4 +406,4 @@ Outra coisa é a parte de ocupar espaço. Antes precisaríamos sempre adicionar 
 
 ## Conclusão
 
-Eu creio que o display e position sejam as partes mais importantes para se aprender no CSS para conseguir entregar qualquer tipo de interface que queira. Não vou ensinar o `position fixed` pois o acho obsoleto para meus usos atuais. E é isso, espero que gostem dessa atualização, e qualquer coisa tem meu twitter e instagram no cabeçalho do site, podem entrar em contato caso precisem de alguma ajuda. Ciao :D
+Eu creio que o display e position sejam as partes mais importantes para se aprender no CSS para conseguir entregar qualquer tipo de interface que queira. Não vou ensinar o `position fixed` pois o acho obsoleto para meus usos atuais. E é isso, espero que gostem dessa atualização, e qualquer coisa tem meu instagram no cabeçalho do site, podem entrar em contato caso precisem de alguma ajuda. Ciao :D

@@ -495,7 +495,7 @@ Uma coisa que esse código não está fazendo é validar o tipo de conteúdo que
 
 O modelo de *promises* em conjunto com o *fetch()* e o *AbortControler()* deixam o tratamento de requisições nativo de uma forma completa, que eu julgo ser sem a necessidade de bibliotes externas. Uma coisa que está para ser anunciada para o futuro do `fetch()`, é enviar uma *stream* pelo corpo da requisição. Acho que o futuro está promissor para aprender bastante sobre requisições no javascript porque ainda vem coisas bem legais por aí.
 
-Se você encontrou um erro no artigo, sugestão ou incoerência, pode me enviar uma mensagem no [Twitter](https://twitter.com/dioruto "Twitter do Diogo") ou no [Instagram](https://instagr.am/fotografolixo "Instagram do Diogo"). Ficarei feliz em corrigir os problemas e aprender como fazer da melhor forma para também compartilhar o conhecimento da forma mais correta.
+Se você encontrou um erro no artigo, sugestão ou incoerência, pode me enviar uma mensagem no [Instagram](https://instagr.am/fotografolixo "Instagram do Diogo"). Ficarei feliz em corrigir os problemas e aprender como fazer da melhor forma para também compartilhar o conhecimento da forma mais correta.
 
 Obrigado por ler até aqui! :D
 

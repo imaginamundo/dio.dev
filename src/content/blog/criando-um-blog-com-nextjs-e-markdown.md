@@ -775,7 +775,7 @@ export function getStaticPaths() {
 
 Agora quando você rodar o projeto, ele irá ter a sua lista de postagens, ordenado por mais recente, e também conseguirá rodar todas as páginas de forma estática, em breve postarei mais conteúdos sobre esse projeto, como deploy entre outras coisas.
 
-Se você tem alguma dúvida, entre em contato comigo pelo twitter [@dioruto](https://twitter.com/dioruto).
+Se você tem alguma dúvida, entre em contato comigo pelo [Instagram](https://instagr.am/fotografolixo "Instagram do Diogo").
 
 Esse blog onde você está lendo esse artigo foi feito da mesma forma, mas com algumas coisas a mais para sanar as minhas necessidades, mais tratamentos de erros e performance SEO. Para ver como está acesse o [repositório no GitHub](https://github.com/imaginamundo/dio.dev).
 
