@@ -10,9 +10,14 @@ const { title, description } = Astro.props;
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <meta name="theme-color" content="black" />
-<meta property="og:title" content={title} />
+<meta property="og:title" content={ title } />
+<meta property="og:description" content={ description } />
 <meta property="og:site_name" content="Blog do Diogo Ferreira Fernandes" />
 <meta property="og:image" content="https://dio.dev/seo/og-image.png" />
+
+<meta property="twitter:title" content={ title } />
+<meta property="twitter:description" content={ description } />
+<meta property="twitter:image" content="https://dio.dev/seo/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@dioruto" />
 
