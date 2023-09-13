@@ -15,7 +15,7 @@ const sortedPosts = posts.sort((a, b) =>
 			<article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
 				<h2>
 					<a href={`/${post.slug}`}>
-						{post.data.icon} {post.data.publishedAt.formated} · {post.data.title}
+						{post.data.icon}{' '}{post.data.publishedAt.formated} · {post.data.title}
 					</a>
 				</h2>
 				<p>{post.data.description}</p>
