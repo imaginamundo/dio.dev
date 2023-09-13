@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /offline
 
-Sitemap: https://dio.dev/sitemap.xml
+Sitemap: https://dio.dev/sitemap-index.xml
