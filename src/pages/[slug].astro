@@ -21,7 +21,7 @@ const breadcrumb = [{
   <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 itemprop="headline">{entry.data.icon}{' '}{entry.data.title}</h1>
-      <p><time itemprop="datePublished" datetime={entry.data.publishedAt.iso}>{entry.data.publishedAt.formated}</time></p>
+      <p><time itemprop="datePublished" datetime={entry.data.publishedAt.iso.toISOString()}>{entry.data.publishedAt.formated}</time></p>
     </header>
     <p aria-label="summary">{entry.data.description}</p>
     <Content />
