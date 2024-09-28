@@ -91,6 +91,25 @@ const navItems = [
       margin-bottom: var(--spacing);
     }
 
+    .publi {
+      text-align: center;
+    }
+    .publi img {
+      image-rendering: -webkit-crisp-edges;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      -webkit-font-smoothing: none;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    .publi-label {
+      font-size: .75rem;
+      background-color: #fff;
+      border: 1px solid #000;
+      color: #000;
+      padding: 2px;
+    }
+
     .content > *,
     .container {
       max-width: var(--max-width);
@@ -216,6 +235,12 @@ const navItems = [
       }
     </ol>
   </nav>
+  <div class="publi">
+    <span class="publi-label">publicidade</span>
+    <a href="https://www.gugugram.com" target="_blank">
+      <img src="/publi/gugugram.gif" width="285" height="36" alt="gugugram, a sua rede social de fotografias!" />
+    </a>
+  </div>
   <main class:list={{container: centered}}>
     <slot />
   </main>
